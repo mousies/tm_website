@@ -6,9 +6,9 @@ webhook_url:
 sections:
 - type: directory
   path: content
-  label: Events
+  label: Pages
   create: all
-  match: events/**/*
+  match: pages/*
 - type: directory
   path: content
   label: People
@@ -16,9 +16,9 @@ sections:
   match: people/*
 - type: directory
   path: content
-  label: Pages
+  label: Events
   create: all
-  match: pages/*
+  match: events/**/*
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
