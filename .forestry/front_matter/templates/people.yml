@@ -1,4 +1,40 @@
 ---
 label: People
 hide_body: false
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  default: ''
+- name: bio
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Bio
+- name: joining_date
+  type: datetime
+  description: ''
+  config:
+    required: false
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+  label: Joining Date
+  default: now
+- name: profile_pic
+  type: file
+  config:
+    maxSize: 64
+  label: Profile Picture
+- name: profile
+  type: text
+  config:
+    required: true
+    min: 2
+  label: Job Profile
