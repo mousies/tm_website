@@ -6,14 +6,19 @@ webhook_url:
 sections:
 - type: directory
   path: content
+  label: Events
+  create: all
+  match: events/**/*
+- type: directory
+  path: content
   label: People
   create: all
-  match: people
+  match: people/*
 - type: directory
   path: content
   label: Pages
   create: all
-  match: pages
+  match: pages/*
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
