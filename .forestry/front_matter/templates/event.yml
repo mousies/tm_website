@@ -1,4 +1,58 @@
 ---
 label: Event
 hide_body: false
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Event Name
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Event Description
+  hidden: false
+- name: starting_date
+  type: datetime
+  description: ''
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+  label: From
+  default: now
+- name: end_date
+  type: datetime
+  label: To
+  description: ''
+  config:
+    required: false
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+- name: event_type
+  type: select
+  default: Workshop
+  config:
+    required: true
+    options:
+    - Workshop
+    - Talk
+    - Screening
+    - Seminar
+    - Conference
+    - Open House
+    - Live Performance
+    - Festival
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Event Type
