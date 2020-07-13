@@ -1,6 +1,7 @@
 ---
 label: Project
 hide_body: true
+display_field: project_name
 fields:
 - name: project_name
   type: text
