@@ -1,4 +1,18 @@
 ---
 label: Research Methodology
 hide_body: false
-fields: []
+fields:
+- name: method_name
+  type: text
+  config:
+    required: true
+  label: Method Name
+- name: method_description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Method Description
