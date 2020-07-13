@@ -19,8 +19,8 @@ sections:
   label: Events
   create: all
   match: events/**/*
-upload_dir: static/uploads
-public_path: "/uploads"
+upload_dir: assets/img
+public_path: assets/img
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
