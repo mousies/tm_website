@@ -16,3 +16,7 @@ fields:
     schema:
       format: markdown
   label: Method Description
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
