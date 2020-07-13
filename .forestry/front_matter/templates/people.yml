@@ -38,3 +38,23 @@ fields:
     required: true
     min: 2
   label: Job Profile
+- name: twitter
+  type: text
+  config:
+    required: false
+  label: Twitter URL
+- name: instagram
+  type: text
+  config:
+    required: false
+  label: Instagram URL
+- name: linkedin
+  type: text
+  config:
+    required: false
+  label: LinkedIn URL
+- name: website
+  type: text
+  config:
+    required: false
+  label: Website
