@@ -50,6 +50,7 @@ fields:
     - Open House
     - Live Performance
     - Festival
+    - Exhibition
     source:
       type: simple
       section: 
