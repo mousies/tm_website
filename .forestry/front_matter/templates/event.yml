@@ -57,3 +57,7 @@ fields:
       file: 
       path: 
   label: Event Type
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
