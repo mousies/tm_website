@@ -1,4 +1,60 @@
 ---
 label: Project
 hide_body: true
-fields: []
+fields:
+- name: project_name
+  type: text
+  config:
+    required: true
+  label: Project Name
+- name: client_name
+  type: text
+  config:
+    required: true
+  label: Client Name
+  default: Internal
+- name: project_status
+  type: select
+  default: Live
+  config:
+    required: true
+    options:
+    - Live
+    - Completed
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Project Status
+- name: start_date
+  type: datetime
+  label: Start Date
+  description: ''
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: true
+  default: now
+- name: end_date
+  type: datetime
+  label: End Date
+  description: ''
+  config:
+    required: false
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+  showOnly:
+    field: project_status
+    value: Completed
+- name: project_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Project Description
