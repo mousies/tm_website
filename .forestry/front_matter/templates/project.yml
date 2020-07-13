@@ -58,3 +58,7 @@ fields:
     schema:
       format: markdown
   label: Project Description
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
